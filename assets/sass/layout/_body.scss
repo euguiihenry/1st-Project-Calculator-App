@@ -1,0 +1,13 @@
+@use "../abstracts/mixins";
+@use "../components/typography";
+@use "../components/colors";
+
+.calculator-body{
+    @include mixins.flex-column();
+    @include mixins.flex-center();
+    gap: 1em;
+    width: 100%;
+    height: 100%;
+    background-color: colors.$dark-blue;
+    border-radius: 1.2em;
+}

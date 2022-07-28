@@ -1,5 +1,6 @@
 @use "./components/reset";
 @use "./abstracts/mixins";
+@use "./components/colors";
 @use "./components/typography";
 @use "./layout/header";
 @use "./layout/body";
@@ -7,3 +8,23 @@
 @use "./layout/buttons";
 @use "./layout/footer";
 @use "./layout/historic";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+html{
+    min-height: 100%;
+    scroll-behavior: smooth;
+    color: colors.$white;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    @include mixins.grid();
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-columns: 1f;
+    grid-template-rows: 1f;
+    padding: 1em;
+    background-color: colors.$bg;
+}

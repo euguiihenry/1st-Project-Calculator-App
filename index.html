@@ -5,72 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="./assets/img/calculator-icon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/img/calculator-icon.svg" type="image/x-icon">
     <title>Calculator App</title>
 </head>
 <body>
-    <section class="historic">
+    <header>
+        <img src="./assets/img/calculator-icon.svg" alt="Calculator Icon">
+        <h1>Calculator App</h1>
+    </header>
 
-    </section>
+    <main>
+        <section class="historic">
 
-    <section class="display">
-        <div id="semi-historic">
-
-        </div>
-
-        <div id="result">
-
-        </div>
-    </section>
-
-    <section class="buttons">
-        <section class="top-buttons">
-            <article>
-                <div>C</div>
-                <div>%</div>
-                <div>√</div>
-            </article>
-
-            <article>
-                <div>C</div>
-                <div>%</div>
-                <div>√</div>
-            </article>
         </section>
-
-        <section class="numbers">
-            <article>
-                <div>9</div>
-                <div>8</div>
-                <div>7</div>
-            </article>
-
-            <article>
-                <div>6</div>
-                <div>5</div>
-                <div>4</div>
-            </article>
-
-            <article>
-                <div>3</div>
-                <div>2</div>
-                <div>1</div>
-            </article>
-
-            <article>
-                <div>.</div>
-                <div>0</div>
-            </article>
+    
+        <section class="display">
+            <div id="semi-historic">
+    
+            </div>
+    
+            <div id="result">
+    
+            </div>
         </section>
+    
+        <section class="buttons">
+            <section class="first-row">
+                <div id="clean">C</div>
+                <div id="percent" class="yellow">%</div>
+                <div id="sqrt" class="yellow">√</div>
+                <div id="log" class="yellow">log</div>
+                <div id="power" class="yellow">xⁿ</div>
+            </section>
 
-        <section class="side-buttons">
-            <div>Del</div>
-            <div>÷</div>
-            <div>×</div>
-            <div>-</div>
-            <div>+</div>
-            <div>=</div>
+            <section class="second-row">
+                <article>
+                    <div id="seven" class="light-blue">7</div>
+                    <div id="eight" class="light-blue">8</div>
+                    <div id="nine" class="light-blue">9</div>
+                    <div id="open-bracket" class="yellow">(</div>
+                    <div id="close-bracket" class="yellow">)</div>
+                </article>
+            </section>
+            
+            <section class="third-row">
+                <div id="four" class="light-blue">4</div>
+                <div id="five" class="light-blue">5</div>
+                <div id="six" class="light-blue">6</div>
+                <div id="times" class="yellow">×</div>
+                <div id="divide" class="yellow">÷</div>
+            </section>
+
+            <section class="fourth-row">
+                <div id="one" class="light-blue">1</div>
+                <div id="two" class="light-blue">2</div>
+                <div id="three" class="light-blue">3</div>
+                <div id="plus" class="yellow">+</div>
+                <div id="minus" class="yellow">-</div>
+            </section>
+
+            <section class="fifth-row">
+                <div id="zero" class="light-blue">0</div>
+                <div id="dot" class="light-blue">.</div>
+                <div id="Del" class="light-blue">Del</div>
+                <div id="Ans" class="yellow">Ans</div>
+                <div id="equals" class="yellow">=</div>
+            </section>
         </section>
-    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
 </body>
 </html>

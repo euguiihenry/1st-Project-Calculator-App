@@ -60,17 +60,31 @@ img {
   border-radius: 0.85em;
   background-color: rgba(132, 184, 255, 0.3);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  max-width: 88%;
+  text-overflow: ellipsis;
 }
 .calculator-body .display #semi-historic {
   width: 100%;
   height: 50%;
   border-radius: 0.85em;
-  color: typography;
+  color: rgba(241, 241, 241, 0.5);
+  text-align: end;
+  padding: 1.5em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: pre-line;
 }
 .calculator-body .display #result {
   width: 100%;
   height: 50%;
   border-radius: 0.85em;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 1em;
+  font-size: 1.5em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: pre-line;
 }
 
 .calculator-body .buttons {
@@ -88,7 +102,7 @@ img {
   height: auto;
   gap: 0.6em;
 }
-.calculator-body .buttons section div {
+.calculator-body .buttons section button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -97,7 +111,10 @@ img {
   width: 3.5em;
   height: 3.5em;
   border-radius: 0.85em;
+  border: none;
   cursor: pointer;
+  font: normal 400 30px "Inter", sans-serif #000000;
+  font-size: 1rem;
 }
 .calculator-body .buttons .first-row {
   display: flex;
@@ -164,18 +181,6 @@ img {
   cursor: pointer;
   color: #FFFFFF;
   text-decoration: none;
-}
-
-.hide {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-.show {
-  display: flex;
-  width: 100%;
-  height: auto;
 }
 
 html {

@@ -4,6 +4,6 @@
 
 <span>Date: July 2022</span>
 
-<span>Mockup Image</span>
+<span>Mockup Image:</span>
 
 ![Screenshot](mockupImage.png)
